@@ -5,11 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class ProductListComponent  {
+  public products: any[] = [
+      {
+        id: 1,
+        name: 'Unicorn',
+        emoji: '🦄'
+      },
+      {
+        id: 2,
+        name: 'Boom',
+        emoji: '💥'
+      },
+      {
+        id: 3,
+        name: 'Rocket',
+        emoji: '🚀'
+      }
+  ];
 
 }

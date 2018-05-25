@@ -1,3 +1,7 @@
-<p>
-  product-list works!
-</p>
+<mat-list>
+  <mat-list-item *ngFor="let product of products">
+      #{{ product.id }} - {{ product.name }} {{ product.emoji }}
+      <button mat-button [routerLink]="['/products', 'details']">Click me!</button>
+  </mat-list-item>
+</mat-list>
+<mat-card *ngFor="let product of products">  #{{ product.id }} - {{ product.name }} {{ product.emoji }}</mat-card>
