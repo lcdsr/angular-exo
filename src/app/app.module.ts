@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReversePipe } from './core/pipes/reverse.pipe';
+import { MomentPipe } from './core/pipes/moment.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductListComponent,
     ProductEditComponent,
     ProductDetailComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ReversePipe,
+    MomentPipe
   ],
   imports: [
     BrowserModule,

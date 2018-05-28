@@ -1,6 +1,6 @@
 <mat-list>
   <mat-list-item *ngFor="let product of products">
-      #{{ product.id }} - {{ product.name }} {{ product.emoji }}
+      #{{ product.id }} - {{ product.name | reverse }} {{ product.emoji }} {{ product.date | moment:'DD/MM/YYYY' }}
       <button mat-button [routerLink]="['/products', 'details']">Click me!</button>
   </mat-list-item>
 </mat-list>

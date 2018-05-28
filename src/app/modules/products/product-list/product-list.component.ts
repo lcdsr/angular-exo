@@ -10,17 +10,20 @@ export class ProductListComponent  {
       {
         id: 1,
         name: 'Unicorn',
-        emoji: '🦄'
+        emoji: '🦄',
+        date : new Date()
       },
       {
         id: 2,
         name: 'Boom',
-        emoji: '💥'
+        emoji: '💥',
+        date : new Date()
       },
       {
         id: 3,
         name: 'Rocket',
-        emoji: '🚀'
+        emoji: '🚀',
+        date : new Date()
       }
   ];
 
