@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReversePipe } from './core/pipes/reverse.pipe';
 import { MomentPipe } from './core/pipes/moment.pipe';
 import { StarRatingComponent } from './core/components/star-rating/star-rating.component';
+import { ProductService } from './core/models/product/product.service';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { StarRatingComponent } from './core/components/star-rating/star-rating.c
     MatCardModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

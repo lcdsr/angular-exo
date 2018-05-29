@@ -1,16 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService, IProduct } from '../../../core/models/product/product.service';
 
-export interface IProduct{
-  id:number,
-  productName: string,
-  productCode: string,
-  releaseDate: Date;
-  price:number,
-  description: string,
-  starRating: number,
-  imageURL:string,
-  emoji:string
-}
+
 
 @Component({
   selector: 'app-product-list',
@@ -18,6 +9,9 @@ export interface IProduct{
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent  {
+  constructor(public productService: ProductService){
+    //this._productService = ProductService
+  }
   public products: IProduct[] = [
       {
         id: 1,
