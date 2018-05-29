@@ -17,6 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReversePipe } from './core/pipes/reverse.pipe';
 import { MomentPipe } from './core/pipes/moment.pipe';
+import { StarRatingComponent } from './core/components/star-rating/star-rating.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { MomentPipe } from './core/pipes/moment.pipe';
     ProductDetailComponent,
     WelcomeComponent,
     ReversePipe,
-    MomentPipe
+    MomentPipe,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

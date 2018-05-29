@@ -1,7 +1,7 @@
 <mat-list>
   <mat-list-item *ngFor="let product of products">
-      #{{ product.id }} - {{ product.name | reverse }} {{ product.emoji }} {{ product.date | moment:'DD/MM/YYYY' }}
-      <button mat-button [routerLink]="['/products', 'details']">Click me!</button>
+      #{{ product.id }} - {{ product.productName  }} {{ product.emoji }} {{ product.date | moment:'DD/MM/YYYY'}} - <app-star-rating [rating]= product.starRating></app-star-rating>
+      <button mat-button [routerLink]="['/products', 'details']">Cl</button>
   </mat-list-item>
 </mat-list>
-<mat-card *ngFor="let product of products">  #{{ product.id }} - {{ product.name }} {{ product.emoji }}</mat-card>
+
